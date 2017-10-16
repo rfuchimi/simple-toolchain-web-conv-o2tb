@@ -11,7 +11,7 @@
  *
  */
 var watson = require('watson-developer-cloud');
-var CONVERSATION_NAME = "Conversation-Demo"; // conversation name goes here.
+var CONVERSATION_NAME = "Converse com a Anne"; // conversation name goes here.
 var fs = require('fs');
 // load local VCAP configuration
 var appEnv = null;
@@ -23,13 +23,13 @@ var conversationWorkspace, conversation;
 // Create the service wrapper
     conversation = watson.conversation({
         url: "https://gateway.watsonplatform.net/conversation/api"
-        , username: "<username>"
-        , password: "<password>"
+        , username: "877da85f-2f72-4686-9a4f-c066070f0089"
+        , password: "ebad5cxAYKwx"
         , version_date: '2017-04-10'
         , version: 'v1'
     });
     // check if the workspace ID is specified in the environment
-    conversationWorkspace = "<workspace_id>";
+    conversationWorkspace = "45e4f18a-7015-48d1-a161-c644d0f780be";
     // if not, look it up by name or create one
 // Allow clients to interact
 
